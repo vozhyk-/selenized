@@ -1,4 +1,4 @@
-;;; Selenized dark-theme.el --- Theme 
+;;; selenized-dark-theme.el --- Theme 
 
 ;; Copyright (C) 2016 , Jan Warchoł
 
@@ -27,7 +27,7 @@
 
 ;;; Code:
 
- (deftheme Selenized dark)
+ (deftheme selenized-dark)
  (let ((class '((class color) (min-colors 89)))
        (fg1 "#adbcbc")
        (fg2 "#9fadad")
@@ -48,7 +48,7 @@
        (warning "#fa5750")
        (warning2 "#ed8649"))
    (custom-theme-set-faces
-   'Selenized dark
+   'selenized-dark
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
         `(font-lock-builtin-face ((,class (:foreground ,builtin))))
         `(font-lock-comment-face ((,class (:foreground ,comment))))
@@ -244,10 +244,10 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'Selenized dark)
+(provide-theme 'selenized-dark)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
 
-;;; Selenized dark-theme.el ends here
+;;; selenized-dark-theme.el ends here
